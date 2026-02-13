@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanushree Nayal | web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ================= LOADER ================= -->
+<div id="loader">
+  <canvas id="circles"></canvas>
+  <div id="profileCircle">
+    <img src="./assets/portzoom.jpeg" alt="Profile" />
+  </div>
+</div>
+
+    
+    <nav id="desktop-nav">
+        <div class="logo">Tanushree Nayal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tanushree Nayal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/portzoom.jpeg" alt="Tanushree Nayal profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Tanushree Nayal</h1>
+            <p class="section__text__p2">FullStack & DevOps Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/MY_RESUME_Updated.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/tanushree-nayal-466816275'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/jasmine1711'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <p class="section__text__p1">Get To Know More</p>
+        
+        <!-- <div class="section-container"> -->
+            <!-- <div class="section__pic-container">
+                <img src="./assets/MY.jpeg" alt="Profile picture" class="about-pic" />
+            </div> -->
+            <!-- <div class="about-details-container"> -->
+                <!-- <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />FullStack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech Bachelors Degree<br />DIT University</p>
+                    </div>
+                </div> -->
+                <div class="text-container">
+                    <p>
+                        I'm Tanushree Nayal, a final-year B.Tech engineering student specializing in Full Stack Development, with strong hands-on experience in front-end and back-end technologies.
+                        I have built real-time projects and am actively learning DevOps to broaden my skills. Creative, adaptable, and solution-oriented,I'm passionate about taking on real-world challenges, learning through experience, and turning creative ideas into impactful solutions.
+                    </p>
+                </div>
+            <!-- </div>
+        </div> -->
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="skills-container">
+        <!-- Languages -->
+        <div class="skill-card">
+            <h2 class="skill-title">Languages</h2>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Java</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>C</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Front-End -->
+        <div class="skill-card">
+            <h2 class="skill-title">Front-End</h2>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>React.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back-End & Databases -->
+        <div class="skill-card">
+            <h2 class="skill-title">Back-End & Databases</h2>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Express.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card">
+            <h2 class="skill-title">Tools & Platforms</h2>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Postman</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Canva</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Ubuntu</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-card">
+            <h2 class="skill-title">Cloud & DevOps</h2>
+            <div class="skill-items">
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Containerization</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./assets/checkmark.png" alt="Check Icon" class="icon" />
+                    <span>Docker</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container project-card">
+                    <div class="article-container">
+                        <div class="project-video-container">
+                            <video class="project-video" autoplay loop muted playsinline>
+                                <source src="./assets/project-1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">AETHER - Your Digital Wardrobe</h2>
+                    <p class="project-description">AETHER is a secure MERN-stack application with authentication and AI integration, similar to intelligent ERP portals used in enterprise systems.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://jasmine1711.github.io/AETHER/', '_blank')">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://velvety-basbousa-666b8c.netlify.app/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                  <div class="details-container color-container project-card">
+                    <div class="article-container">
+                        <div class="project-video-container">
+                            <video class="project-video" autoplay loop muted playsinline>
+                                <source src="./assets/createmart.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title"> CREATEMART </h2>
+                    <p class="project-description">CreateMart is a MERN-stack based customizable product management platform that mirrors ERP-style product master and customization workflows.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/jasmine1711/CreateMart')">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://create-mart-tzf2-xjxeq9xlz-jasmine1711s-projects.vercel.app/' , '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container project-card">
+                    <div class="article-container">
+                        <div class="project-video-container">
+                            <video class="project-video" autoplay loop muted playsinline>
+                                <source src="./assets/virtualbookstore.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Virtual Bookstore</h2>
+                    <p class="project-description">The Virtual Bookstore is a full-featured e-commerce web application developed using the Spring framework.Traditional bookstores face limitations in accessibility and inventory.This project addresses those needs by creating a user-friendly virtual platform that provides both a wide selection and a curated, engaging shopping experience.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/jasmine1711/Virtual_Bookstore', '_blank')">
+                            <i class="fab fa-github"></i> Github
+                        </button>
+                        <button class="btn btn-color-1 project-btn" onclick="window.open('https://virtual-bookstore-1.onrender.com/', '_blank')">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmail.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:tanushreenayal17@gmail.com">tanushreenayal17@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/tanushree-nayal-466816275">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Tanushree Nayal. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
