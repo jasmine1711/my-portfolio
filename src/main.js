@@ -2,6 +2,12 @@
 // Ensure style.css is in the same folder as this JS file. 
 import './style.css';
 
+import resumeExecutor from './src/assets/MyNewResume.pdf';
+
+const handleDownload = () => {
+  window.open(resumeExecutor);
+};
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
