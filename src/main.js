@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
   const ctx = canvas.getContext("2d");
   const profileCircle = document.getElementById("profileCircle");
 
-  const assets = [
+const assets = [
   { type: "video", thumb: new URL('./assets/project-1.mp4', import.meta.url).href },
   { type: "video", thumb: new URL('./assets/createmart.mp4', import.meta.url).href },
   { type: "video", thumb: new URL('./assets/virtualbookstore.mp4', import.meta.url).href },
