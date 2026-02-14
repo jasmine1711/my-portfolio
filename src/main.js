@@ -1,6 +1,5 @@
 // ================= MENU TOGGLE =================
 // Ensure style.css is in the same folder as this JS file. 
-// If it's in a 'src' folder, change this to './src/style.css'
 import './style.css';
 
 function toggleMenu() {
