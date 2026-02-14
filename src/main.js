@@ -3,10 +3,8 @@
 import './style.css';
 
 import resumeExecutor from './assets/MyNewResume.pdf';
-
-const handleDownload = () => {
-  window.open(resumeExecutor);
-};
+// Now apply it to the link element
+document.getElementById('resume-link').href = resumeExecutor;
 
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
