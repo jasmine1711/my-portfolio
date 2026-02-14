@@ -2,7 +2,7 @@
 // Ensure style.css is in the same folder as this JS file. 
 import './style.css';
 
-import resumeExecutor from './src/assets/MyNewResume.pdf';
+import resumeExecutor from './assets/MyNewResume.pdf';
 
 const handleDownload = () => {
   window.open(resumeExecutor);
