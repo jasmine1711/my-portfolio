@@ -21,10 +21,10 @@ window.addEventListener("load", () => {
   const profileCircle = document.getElementById("profileCircle");
 
   const assets = [
-  { type: "video", thumb: new URL('./src/assets/project-1.mp4', import.meta.url).href },
-  { type: "video", thumb: new URL('./src/assets/createmart.mp4', import.meta.url).href },
-  { type: "video", thumb: new URL('./src/assets/virtualbookstore.mp4', import.meta.url).href },
-  { type: "image", src: new URL('./src/assets/portzoom.jpeg', import.meta.url).href }
+  { type: "video", thumb: new URL('./assets/project-1.mp4', import.meta.url).href },
+  { type: "video", thumb: new URL('./assets/createmart.mp4', import.meta.url).href },
+  { type: "video", thumb: new URL('./assets/virtualbookstore.mp4', import.meta.url).href },
+  { type: "image", src: new URL('./assets/portzoom.jpeg', import.meta.url).href }
 ];
 
   let circles = [];
